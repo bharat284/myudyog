@@ -84,11 +84,12 @@ It's time to take **MyUdyog** live and let the world see the fruits of your effo
 st.markdown('<div class="button-center">', unsafe_allow_html=True)
 if st.button("🚀 Go Live with MyUdyog"):
     st.balloons()
-    st.markdown("[Click here to open MyUdyog](https://myudyogindia.com/)", unsafe_allow_html=True)
+    
     with st.spinner("MyUdyog is lunching....."):
         time.sleep(10)
     st.success("Site deployment complete")
     st.success("Website successfully launched! 🌟")
+    st.markdown("[Click here to open MyUdyog](https://myudyogindia.com/)", unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Footer
