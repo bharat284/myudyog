@@ -8,7 +8,7 @@ logo = Image.open(logo_path)
 
 # Page Configuration
 st.set_page_config(
-    page_title="MyUdyog",
+    page_title="MyUdyog!",
     page_icon=logo,
     layout="centered",
 )
