@@ -1,14 +1,15 @@
 import streamlit as st
 from PIL import Image
+import time
 
 # Load the uploaded image
-logo_path = "C://Users//ADMIN//Desktop//MY Udyog//site_logo.JPG"
-main = "C:\\Users\\ADMIN\\Desktop\\MY Udyog\\Main.JPG"
+logo_path = "site_logo.JPG"
+main = "Main.JPG"
 logo = Image.open(logo_path)
 
 # Page Configuration
 st.set_page_config(
-    page_title="MyUdyog!",
+    page_title="MyUdyog",
     page_icon=logo,
     layout="centered",
 )
@@ -84,6 +85,9 @@ st.markdown('<div class="button-center">', unsafe_allow_html=True)
 if st.button("🚀 Go Live with MyUdyog"):
     st.balloons()
     st.markdown("[Click here to open MyUdyog](https://myudyogindia.com/)", unsafe_allow_html=True)
+    with st.spinner("MyUdyog is lunching....."):
+        time.sleep(10)
+    st.success("Site deployment complete")
     st.success("Website successfully launched! 🌟")
 st.markdown('</div>', unsafe_allow_html=True)
 
